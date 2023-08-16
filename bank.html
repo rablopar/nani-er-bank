@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taka Taka R Taka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl mt-5 lg:w-8/12 mx-auto font-bold ">Welcome to <span class="text-rose-600 font-extrabold ">Nanir-Banke</span></h1>
+      </header>
+      <main>
+        <section >
+            <div class=" grid  lg:grid-cols-3 mt-8 lg:w-8/12 mx-auto gap-4 lg:gap-8" >
+                <div class="bg-rose-400 py-2 px-4 rounded-lg">
+                    <h2 class="text-3xl font-semibold text-slate-600">Deposit</h2>
+                    <h3 class="text-3xl font-semibold text-slate-600">$<span id="deposit-ammount">00</span></h3>
+                </div>
+                <div class="bg-blue-400 py-2 px-4 rounded-lg">
+                    <h2 class="font-semibold text-3xl text-slate-600">Withdraw</h2>
+                    <h3 class="text-3xl font-semibold text-slate-600">$<span id="witdraw-total">00</span></h3>
+                </div>
+                <div class="bg-green-400 py-2 px-4 rounded-lg">
+                    <h2 class="font-semibold text-3xl text-slate-600">Balance</h2>
+                    <h3 class="text-3xl font-semibold text-slate-600">$<span id="balance-total">1240</span></h3>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 mt-8  lg:w-8/12 mx-auto  gap-4 lg:gap-8">
+                <div class="bg-violet-400 py-2 px-4 rounded-lg">
+                    <h2 class="text-2xl my-2">Please Deposit</h2>
+                    <input id="input-deposit" type="text" name="" placeholder="$ Khali Taka Kamaw" class="block w-8/12 px-4" >
+                    <button id="btn-deposit" class="bg-red-600 mt-4 px-4 py-2 text-white rounded-lg hover:bg-violet-600 font-semibold ">Deposit</button>
+                </div>
+                <div class="bg-orange-400 py-2 px-4 rounded-lg">
+                    <h2 class="text-2xl my-2">Please Withdraw</h2>
+                    <input id="Withdraw-input" type="text" name="" placeholder="$ Khali Taka Taka koro humm??" class="block w-8/12 px-4" >
+                    <button id="btn-witdorw" class="bg-red-600 mt-4 px-4 py-2 text-white rounded-lg hover:bg-violet-600 font-semibold ">Withdraw</button>
+                </div>
+            </div>
+        </section>
+      </main>
+      <script src="js-file/deposte.js"></script>
+      <script src="js-file/w-d.js"></script>
+      <script src="js-file/witdraw.js"></script>
+</body>
+</html>
